@@ -1,0 +1,51 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the main background color */
+body {
+    background-color: #00a86b; /* Vibrant olive green */
+    color: #000; /* Black text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #000; /* Black header background */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #00a86b; /* Olive green link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+}
+
+.home h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
