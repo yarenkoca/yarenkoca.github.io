@@ -3,23 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Yaren Koca</title>
+    <style>
+        body {
+            font-family: 'Didot', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure full viewport height */
+            background-color: #362c28; /* Set background color */
+        }
+        .intro {
+            padding: 0px 0px;
+        }
+        h1 {
+            font-size: 5em;
+            color: #F9C80E;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav {
+            text-align: center;
+            padding: 1px 0;
+        }
+        .main-nav a {
+            color: #f86624;
+            text-decoration: none;
+            padding: 0px 2px;
+            display: inline-block;
+            margin: 5px; /* Adjust margin to make links closer */
+            transition: color 0.2s; /* Smooth transition for color change */
+        }
+        .main-nav a:hover {
+            color: #84b082; /* Change text color on hover */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="home">
-            <h1>Welcome to Your Website</h1>
-        </section>
-    </main>
+<section class="intro">
+    <h1>Merhaba.</h1>
+</section>
+
+<nav class="main-nav">
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching Resources</a>
+</nav>
+
 </body>
 </html>

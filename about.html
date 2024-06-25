@@ -3,24 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Yaren Koca</title>
+    <style>
+     body {
+            font-family: 'Times', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: #ffe6ac; 
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            min-height: 100vh; /* Ensure full viewport height */
+            max-width: 800px; 
+            margin: 0 auto; 
+            color: #362c28;
+        }
+
+        .main-nav {
+            position: sticky;
+            top: 0px;
+            background-color: #362c28;
+            height: inherit;
+            width: 100%;
+            background-size: auto;
+        }
+
+        .main-nav a {
+            position: relative;
+            left: 275px;
+            color: #ffe6ac;
+            text-decoration: none;
+            padding: 0px 2px;
+            display: inline-block;
+            margin: 10px; 
+            transition: color 0.2s; 
+        }
+
+        .main-nav a:hover {
+            color: #84b082;
+        }
+
+        .p {
+            max-width: 700px; 
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="about">
-            <h2>About Us</h2>
-            <p>Insert your about us content here.</p>
-        </section>
-    </main>
+
+<nav class="main-nav">
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching Resources</a>
+</nav>
+
+
+<div class="container">
+    <!--<header>
+    <h1>COMING SOON</h1>
+    </header>-->
+
+    <section>
+        <h2>About Me</h2>
+        <p>I'm Yaren. I'm a PhD student at the University of Regina, working with Chris Oriet. I study the cognitive mechanisms underlying how we become familiar with faces. <br>
+            I enjoy programming (like making this website), philosophy, yoga, and visual arts and design (like making this website!). <br> <br>
+
+            My PhD dissertation is about how the face space theory can incorporate face familiarity, and by extension, within-person variability. If you are really, really bored and have nothing else better to do, you can read my proposal <a href="dissertation_proposal.pdf" style="text-decoration:none" target="_blank">here</a>. <br>
+            For my Master's thesis, I looked into ensemble coding as an underlying mechanism for face familiarity. If you are looking for a slightly more enjoyable read, check out our <a href="https://journals.sagepub.com/doi/full/10.1177/09567976221131520" target="_blank">publication</a>. <br><br>
+
+            If you'd like to reach out, feel free to <a href="mailto:yarennkoca@gmail.com" target="_blank">shoot me an email</a>, or find me on <a href="https://x.com/ren_koca" target="_blank">X (@ren_koca)</a>. <br>
+            You can also <a href="Yaren_Koca_CV_Jun2024.pdf" target="_blank">download my CV</a>.
+
+
+
+        </p>
+    </section>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 Yaren Koca. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
