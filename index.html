@@ -18,9 +18,7 @@
             height: 100vh; /* Ensure full viewport height */
             background-color: #362c28; /* Set background color */
         }
-        .intro {
-            padding: 0px 0px;
-        }
+
         h1 {
             font-size: 5em;
             color: #F9C80E;
@@ -30,8 +28,13 @@
         }
 
         .main-nav {
-            text-align: center;
-            padding: 1px 0;
+            padding: 10px 0;
+            width: 100%; /* Ensure full width */
+            position: fixed; /* Fix to the top */
+            top: 0; /* Align to the top */
+            left: 33%;
+            background-color: #362c28; /* Same background color */
+            z-index: 1; /* Ensure it stays on top */
         }
         .main-nav a {
             color: #f86624;
@@ -44,13 +47,37 @@
         .main-nav a:hover {
             color: #84b082; /* Change text color on hover */
         }
+
+        .text {
+            font-size: 8em; /* Common font size */
+            color: #F9C80E; /* Same color as 'Merhaba' */
+            margin: 20px 0;
+            position: relative; /* Allow absolute positioning of rotated text */
+            left: 40px;
+        }
+
+        .container {
+            display: flex; /* Use flexbox for alignment */
+            justify-content: space-between; /* Space between the texts */
+            width: 100%; /* Full width */
+            position: absolute; /* Position relative to body */
+            top: 10px; /* Position below the nav bar */
+        }
+
+        .rotated-text {
+            transform: rotate(90deg);
+            display: inline-block;
+            margin-right: 0px; /* Adjust spacing as needed */
+            margin-top: 400px; 
+        }
     </style>
 </head>
 <body>
 
-<section class="intro">
-    <h1>Merhaba.</h1>
-</section>
+    <div class="container">
+        <div class="text">YAREN</div>
+        <div class="text rotated-text">KOCA</div>
+    </div>
 
 <nav class="main-nav">
     <a href="about.html">About</a>
