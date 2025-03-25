@@ -32,21 +32,29 @@
         }
 
         .main-nav {
-            padding: 10px 0;
-            width: 100%; /* Ensure full width */
-            position: fixed; /* Fix to the top */
-            top: 0; /* Align to the top */
-            left: 33%;
-            background-color: #362c28; /* Same background color */
-            z-index: 1; /* Ensure it stays on top */
-        }
-        .main-nav a {
-            color: #f86624;
+            position: sticky;
+            top: 0px;
+            background-color: #362c28;
+            height: inherit;
+            width: 100%;
+            background-size: auto;
             text-decoration: none;
             padding: 0px 2px;
             display: inline-block;
             margin: 5px; /* Adjust margin to make links closer */
             transition: color 0.2s; /* Smooth transition for color change */
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            padding: 0px 2px;
+            display: inline-block;
+            margin: 5px; /* Adjust margin to make links closer */
+            transition: color 0.2s; /* Smooth transition for color change */
+            position: relative;
+            left: 33%;
+            color: #ffe6ac;
+            text-decoration: none;
         }
 
         .main-nav a:hover {
