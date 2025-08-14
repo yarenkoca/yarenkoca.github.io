@@ -3,77 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stlyle.css">
     <title>Yaren Koca</title>
     <style>
-        body {
-            font-family: 'Didot', serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Ensure full viewport height */
-            background-color: #362c28; /* Set background color */
-        }
 
-        .main-nav {
-            padding: 10px 0;
-            width: 100%; /* Ensure full width */
-            position: fixed; /* Fix to the top */
-            top: 0; /* Align to the top */
-            left: 33%;
-            background-color: #362c28; /* Same background color */
-            z-index: 1; /* Ensure it stays on top */
-        }
-        .main-nav a {
-            color: #f86624;
-            text-decoration: none;
-            padding: 0px 2px;
-            display: inline-block;
-            margin: 5px; /* Adjust margin to make links closer */
-            transition: color 0.2s; /* Smooth transition for color change */
-        }
-        .main-nav a:hover {
-            color: #84b082; /* Change text color on hover */
-        }
-
-        .text {
-            font-size: 9em; /* Common font size */
-            color: #F9C80E; /* Same color as 'Merhaba' */
-            margin: 20px 0;
-            position: relative; /* Allow absolute positioning of rotated text */
-            left: 40px;
-        }
-
-        .container {
-            display: flex; /* Use flexbox for alignment */
-            justify-content: space-between; /* Space between the texts */
-            width: 100%; /* Full width */
-            position: absolute; /* Position relative to body */
-            top: 10px; /* Position below the nav bar */
-        }
-
-        .rotated-text {
-            transform: rotate(90deg);
-            display: inline-block;
-            margin-right: -20px; /* Adjust spacing as needed */
-            margin-top: 380px; 
-        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="text">YAREN</div>
-        <div class="text rotated-text">KOCA</div>
+        <div class="text yaren-text">YAREN</div>
+        <div class="text koca-text">KOCA</div>
     </div>
 
 <nav class="main-nav">
     <a href="about.html">About</a>
-    <a href="research.html">Research</a>
+    <a href="research.html">Projects</a>
     <a href="teaching.html">Teaching Resources</a>
 </nav>
 
