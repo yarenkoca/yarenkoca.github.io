@@ -1,54 +1,130 @@
+/* =========================
+   BASE
+   ========================= */
+
 body {
     font-family: 'Didot', serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ensure full viewport height */
     background-color: #362c28;
+    color: #fff;
 }
 
-.yaren_koca-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    font-size: 4em; 
-    color: #F9C80E;
-}
+/* =========================
+   NAVBAR (SAFE FIXED)
+   ========================= */
 
 .main-nav {
-    padding: 10px 0;
-    width: 100%;
-    position: fixed; 
+    position: fixed;
     top: 0;
-    left: 33%;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 12px 5vw; /* responsive padding */
+    box-sizing: border-box;
+
     background-color: #362c28;
-    z-index: 1;
+    z-index: 1000;
 }
+
 .main-nav a {
     color: #f86624;
-    font-family: 'Verdana', sans-serif;
-    font-weight: 500;
-    font-size: 1.2em;
+    font-family: Verdana, sans-serif;
     text-decoration: none;
-    padding: 0px 4px;
-    display: inline-block;
-    margin: 4px;
+
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+
+    margin-left: 2vw; /* responsive spacing between links */
+
+    white-space: nowrap; /* prevents wrapping/breaking */
     transition: color 0.2s;
 }
+
 .main-nav a:hover {
     color: #84b082;
 }
 
-.container {
+@media (max-width: 600px) {
+    .main-nav {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .main-nav a {
+        margin: 0 10px;
+        font-size: 0.95rem;
+    }
+}
+
+/* =========================
+   HOMEPAGE HERO
+   ========================= */
+
+.home-hero {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.yaren_koca-text {
+    font-size: 4em;
+    color: #F9C80E;
+    text-align: center;
+}
+
+/* =========================
+   RESEARCH PAGE LAYOUT
+   ========================= */
+
+.page-wrapper {
+    padding-top: 90px; /* space for fixed navbar */
+    display: flex;
+    justify-content: center;
+}
+
+.projects-section {
+    max-width: 800px;
     width: 100%;
-    margin-top: 80px; /* space for nav */
+    padding: 20px;
+}
+
+/* =========================
+   PROJECT CARD
+   ========================= */
+
+.project-card {
+    background: #362c28;
+    border: 1px solid #362c28;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.project-title {
+    margin-top: 0;
+    color: #F9C80E;
+}
+
+.project-description {
+    font-family: Verdana, sans-serif; color: #ffe6ac;
+}
+
+.project-meta {
+    list-style: none;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    opacity: 0.85;
+    color: #ffe6ac;
+}
+
+.project-links a {
+    margin-right: 10px;
+    color: #F9C80E;
+    text-decoration: none;
 }

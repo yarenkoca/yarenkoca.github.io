@@ -3,96 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Yaren Koca</title>
-    <style>
-     body {
-            font-family: 'Times', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; 
-            background-color: #ffe6ac; 
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 18px;
-            min-height: 100vh; /* Ensure full viewport height */
-            max-width: 800px; 
-            margin: 0 auto; 
-            color: #362c28;
-        }
-
-        .main-nav {
-            position: sticky;
-            top: 0px;
-            background-color: #362c28;
-            height: inherit;
-            width: 100%;
-            background-size: auto;
-            text-decoration: none;
-            padding: 0px 2px;
-            display: inline-block;
-            margin: 5px; /* Adjust margin to make links closer */
-            transition: color 0.2s; /* Smooth transition for color change */
-        }
-
-        .main-nav a {
-            text-decoration: none;
-            padding: 0px 2px;
-            display: inline-block;
-            margin: 5px; /* Adjust margin to make links closer */
-            transition: color 0.2s; /* Smooth transition for color change */
-            position: relative;
-            left: 33%;
-            color: #ffe6ac;
-            text-decoration: none;
-        }
-
-        .main-nav a:hover {
-            color: #84b082;
-        }
-
-        .p {
-            max-width: 700px; 
-            margin: 0 auto;
-        }
-    </style>
 </head>
 <body>
-
 <nav class="main-nav">
     <a href="about.html">About</a>
-    <a href="publications.html">Publications</a>
+    <a href="research.html">Projects</a>
     <a href="teaching.html">Teaching Resources</a>
 </nav>
 
+<div class="page-wrapper">
 
+    <div class="projects-section">
 
+        <div class="project-card">
+            <h3 class="project-title">Adaptive norm-based coding of within-person variability</h3>
 
-<div class="container">
-    <!--<header>
-    <h1>COMING SOON</h1>
-    </header>-->
+            <p class="project-description">
+                Using an adaptation paradigm, we found that within-person variability for familiar faces are represented in reference to identity-specific averages. Adaptation to an anti-exemplar created through distorting identity-specific averages yielded larger adaptation effects than gender-matched averages. We show that familiar face representations have a norm-based architecture in the face space.
+            </p>
 
-    <section>
-        <p>
-        </p>
-    </section>
+            <ul class="project-meta">
+                <li><strong>Status:</strong> Manuscript preparation</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="files/CSBBCS2026_Poster.pdf">CSBBCS 2026 Poster</a>
+                <a href="files/NBS_code_stimuli.zip">Experiment Files</a>
+            </div>
+        </div>
+
+                <div class="project-card">
+            <h3 class="project-title">How do we organize facial identity in memory?</h3>
+
+            <p class="project-description">
+                The problem of face recognition has two faces (pun very much intended): homogeneity between people and variability within person. The face space theory provides a solution to the problem of homogeneity but is limited in explaining the problem of variability. To understand how the face space represents variability, and by extension, face familiarity, we analyzed inter-item similarity ratings of naturalistic face images using multidimensional scaling. We show a 3-dimensional visual depiction of the face space that represents within-person variability. We found that familiarity compresses within-person variability in the face space, but does not increase the distance between identities.
+            </p>
+
+            <ul class="project-meta">
+                <li><strong>Status:</strong> Manuscript preparation</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="files/CSBBCS_2026_Talk.pptx">CSBBCS 2026 Talk Slides</a>
+                <a href="files/males_MDS_3Dimensional.html">3-dimensional face space (male faces)</a>
+                <a href="files/females_MDS_3Dimensional.html">3-dimensional face space (female faces)</a>
+                <a href="https://gitlab.pavlovia.org/ricelab/yaren-phd-study-1">Experiment Files (this is a subsample of the experiment, reach out if needed extra info)</a>
+            </div>
+        </div>
+
+    </div>
+
 </div>
-
-
-<footer>
-    <p>&copy; 2024 Yaren Koca. All rights reserved.</p>
-</footer>
 
 </body>
 </html>
