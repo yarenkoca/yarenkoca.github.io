@@ -12,21 +12,13 @@ body {
     background-color: #362c28;
 }
 
-.yaren-text {
-    font-size: 8em;
-    color: #F9C80E; 
-    margin: 20px 0;
-    position: relative; 
-    left: 40px;
-}
-
-.koca-text {
-    font-size: 8em;
-    color: #F9C80E; 
-    transform: rotate(90deg);
-    display: inline-block;
-    margin-right: -20px;
-    margin-top: 380px; 
+.yaren_koca-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 4em; 
+    color: #F9C80E;
 }
 
 .main-nav {
@@ -54,10 +46,9 @@ body {
 }
 
 .container {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-between; /* Space between the texts */
-    width: 100%; /* Full width */
-    position: absolute; /* Position relative to body */
-    top: 10px; /* Position below the nav bar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px; /* space for nav */
 }
-
