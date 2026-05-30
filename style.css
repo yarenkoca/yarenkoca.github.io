@@ -33,7 +33,7 @@ body {
 
 .main-nav a {
     color: #f86624;
-    font-family: Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
 
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
@@ -112,13 +112,13 @@ body {
 }
 
 .project-description {
-    font-family: Verdana, sans-serif; color: #ffe6ac;
+    font-family: 'Times New Roman', Times, serif, sans-serif; color: #ffe6ac; font-size: 1.2em
 }
 
 .project-meta {
     list-style: none;
     padding: 0;
-    font-family: Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     opacity: 0.85;
     color: #ffe6ac;
 }
@@ -127,4 +127,8 @@ body {
     margin-right: 10px;
     color: #F9C80E;
     text-decoration: none;
+}
+
+a {
+  color: #F9C80E; /* Default unvisited link color */
 }
